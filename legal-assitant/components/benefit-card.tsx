@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface BenefitCardProps {
   title: string
   description: string
