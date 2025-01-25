@@ -8,6 +8,10 @@ app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+@app.route('/test')
+def test():
+    return jsonify({'a':2})
+
 @app.route('/receive_query', methods=['POST'])
 def receive_query():
     data = request.get_json()
@@ -53,4 +57,4 @@ def post_to_reddit():
 
 
 if __name__ == "__main__":
-    app.run(debug=True,port=5001)
+    app.run(debug=True,port=10000)
