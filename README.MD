@@ -13,14 +13,14 @@ Group Members (in alphabetical order)
 | 2.    | Kunal Bansal     | fr092          |
 
 # Requirements
-- Nodejs (https://nodejs.org/en/download)
-- Python (https://www.python.org/downloads/)
+- Nodejs 
+- Python (between 3.9 and 3.13)
 
 # Steps for Installation: 
 1. Clone the repository in your local directory using the command `git clone https://github.com/cruelkratos/LegaLlama-AI.git`
-2. Change directory to cloned Repository `cd SkyView_Capital`
+2. Change directory to cloned Repository `cd LegaLlama-AI`
 3. Install frontend dependencies `cd legal-assitant && npm install`
-4. Now we will be Installing Flask-Server-Side dependencies `cd ML_Model`
+4. Now we will be Installing backend dependencies
 6. Creation and activating the virtual environment:
 `python -m venv mira`
 `env\Scripts\activate.bat`
@@ -34,4 +34,4 @@ Group Members (in alphabetical order)
 1. `python server.py`
 
 # Feedback
-If you have any feedback or suggestions, please reach out to me at divyanshjain.2206@gmail.com
+If you have any feedback or suggestions, please reach out to me at bansalkunal2005@gmail.com
