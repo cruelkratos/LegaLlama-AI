@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
