@@ -1,0 +1,42 @@
+version: "0.0.1"
+
+metadata:
+  flow_type : "compound" 
+  name: "pdf-flow"
+  description: "Flow for analysis of legal documents"
+  author: "fuqu"
+  tags: [legal]
+  private: false
+
+inputs:
+  input1:
+    type: string
+    description: "Description of input1"
+    required: true
+    example: "Are the terms and conditions correct?"
+  input2:
+    type: string
+    description: "Desc of Inp2"
+    required: true
+    example: "Legal Text"
+
+workflow:
+  flow_a:
+    type: "custom"
+    inputs:
+      inp1 : ${inputs.input1}
+      inp2 : ${inputs.input2}
+    model:
+      provider: "meta"
+      name: "llama-3.3-70b-instruct" 
+    dataset:
+      source: "fuqu/legal" 
+    prompt: |
+      {inp2} is the text scrapped from a legal document, answer {inp1} regarding this text according to knowledge base
+
+output:
+  value:
+    - ${flow_a.output}
+
+readme: |
+  Testing

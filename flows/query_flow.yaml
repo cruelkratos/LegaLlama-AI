@@ -1,0 +1,52 @@
+version: "0.0.1"
+
+metadata:
+  flow_type : "compound" 
+  name: "query-flow"
+  description: "Flow for analysis of legal queries"
+  author: "fuqu"
+  tags: [legal]
+  private: false
+
+inputs:
+  input1:
+    type: string
+    description: "Description of input1"
+    required: true
+    example: "punishment for theft"
+  input2:
+    type: string
+    description: "Desc of Inp2"
+    required: true
+    example: "reddit inp"
+
+workflow:
+  flow_a:
+    type: "custom"
+    inputs:
+      inp1 : ${inputs.input1}
+    model:
+      provider: "meta"
+      name: "llama-3.3-70b-instruct" 
+    dataset:
+      source: "fuqu/legal" 
+    prompt: |
+      Answer {inp1} according to knowledge base
+  flow_b:
+    type: "custom"
+    inputs:
+      inp2: ${inputs.input2}
+      inpc : ${inputs.input1}
+    model:
+      provider : "meta"
+      name : "llama-3.3-70b-instruct"
+    prompt: |
+      Here are some Reddit comments, Answer the query ${inpc} based on these: ${inp2}
+
+output:
+  value:
+    - ${flow_a.output}
+    - ${flow_b.output}
+
+readme: |
+  Testing

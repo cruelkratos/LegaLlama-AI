@@ -1,0 +1,44 @@
+version: "0.0.1"
+
+metadata:
+  flow_type : "compound" 
+  name: "post-flow"
+  description: "Flow for getting title and descreption for posting on reddit"
+  author: "fuqu"
+  tags: [legal]
+  private: false
+
+inputs:
+  input1:
+    type: string
+    description: "Description of input1"
+    required: true
+    example: "something"
+
+workflow:
+  flow_a:
+    type: "custom"
+    inputs:
+      inp1 : ${inputs.input1}
+    model:
+      provider: "meta"
+      name: "llama-3.3-70b-instruct"
+    prompt: |
+      Shorten {inp1} for the title of a reddit post, only give 1 title
+  flow_b:
+    type: "custom"
+    inputs:
+      inp1: ${inputs.input1}
+    model:
+      provider : "meta"
+      name : "llama-3.3-70b-instruct"
+    prompt: |
+      Write a descreption for a reddit post with title {inp1}, only give description nothing else
+
+output:
+  value:
+    - ${flow_a.output}
+    - ${flow_b.output}
+
+readme: |
+  Testing
