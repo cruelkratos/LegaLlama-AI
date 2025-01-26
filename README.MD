@@ -16,6 +16,8 @@ Group Members (in alphabetical order)
 - Nodejs 
 - Python (between 3.9 and 3.13)
 
+The *Frontend* is deployed on [Vercel](https://lega-llama-ai.vercel.app/)
+
 # Steps for Installation: 
 1. Clone the repository in your local directory using the command `git clone https://github.com/cruelkratos/LegaLlama-AI.git`
 2. Change directory to cloned Repository `cd LegaLlama-AI`
