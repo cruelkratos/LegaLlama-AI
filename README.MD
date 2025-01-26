@@ -36,4 +36,4 @@ The *Frontend* is deployed on [Vercel](https://lega-llama-ai.vercel.app/)
 1. `python server.py`
 
 # Feedback
-If you have any feedback or suggestions, please reach out to me at bansalkunal2005@gmail.com
+If you have any feedback or suggestions, please reach out to us at garv_s@cs.iitr.ac.in or bansalkunal2005@gmail.com
