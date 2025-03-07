@@ -18,6 +18,8 @@ Group Members (in alphabetical order)
 
 The *Frontend* is deployed on [Vercel](https://lega-llama-ai.vercel.app/)
 
+[Video Demo!](https://youtu.be/pYZt9jmlIgw?si=0hI1DpeDAAAggc7F)
+
 # Steps for Installation: 
 1. Clone the repository in your local directory using the command `git clone https://github.com/cruelkratos/LegaLlama-AI.git`
 2. Change directory to cloned Repository `cd LegaLlama-AI`
