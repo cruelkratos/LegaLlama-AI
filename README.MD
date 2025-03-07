@@ -1,8 +1,8 @@
 # LegaLlama
 LegaLlama is an advanced AI Agent powered by the Mira FLows SDK, designed to assist with resolving legal queries. It offers the following key features:
-1. Legal Query Analysis: Submit a legal question, and LegaLlama will analyze it using its RAG system. You’ll receive detailed comments and personalized suggestions drawn from relevant Reddit discussions to help guide your understanding.
-2. Reddit Posting: If you're not satisfied with the analysis, you can easily post your query directly to Reddit with just a click, ensuring that you get diverse perspectives and expert insights.
-3. Legal Document Analysis: Upload a legal document in PDF format, and LegaLlama will help you extract relevant information. You can ask specific questions regarding the document and get informed responses.
+1. *Legal Query Analysis* : Submit a legal question, and LegaLlama will analyze it using its <b>RAG system</b> . You’ll receive detailed comments and personalized suggestions drawn from relevant Reddit discussions to help guide your understanding.
+2. *Reddit Posting* : If you're not satisfied with the analysis, you can easily post your query directly to Reddit with just a click, ensuring that you get diverse perspectives and expert insights.
+3. *Legal Document Analysis* : Upload a legal document in PDF format, and LegaLlama will help you extract relevant information. You can ask specific questions regarding the document and get informed responses.
 LegaLlama provides an intuitive, streamlined way to navigate legal questions, making complex legal matters more accessible and understandable.
 
 Group Members (in alphabetical order)
